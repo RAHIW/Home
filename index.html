@@ -186,7 +186,7 @@
       border-bottom-color: var(--text-white);
     }
 
-    /* ========== Clients Section (FIXED) ========== */
+    /* ========== Edited Videos Section ========== */
     .clients-section {
       padding: 5rem 0;
       text-align: center;
@@ -200,36 +200,34 @@
 
     .client-logos {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 2rem;
       justify-items: center;
     }
 
     .logo-item {
       background-color: var(--text-white);
-      border-radius: 8px;
+      border-radius: 12px;
       overflow: hidden;
-      aspect-ratio: 4 / 3;
+      aspect-ratio: 9 / 16;
       width: 100%;
+      max-width: 350px;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: transform 0.3s ease;
+      box-shadow: 0 4px 20px rgba(0, 255, 255, 0.2);
     }
 
     .logo-item:hover {
       transform: scale(1.05);
     }
 
-    .logo-item img {
+    .logo-item iframe {
       width: 100%;
       height: 100%;
-      object-fit: contain;
-      transition: transform 0.3s ease;
-    }
-
-    .logo-item:hover img {
-      transform: scale(1.05);
+      border: none;
+      border-radius: 12px;
     }
 
     /* ========== Footer ========== */
@@ -369,15 +367,25 @@
     </div>
   </main>
 
+  <!-- ====== Our Recent Edited Videos Section ====== -->
   <section class="clients-section container">
-    <h2 class="section-heading">Our recent Clients</h2>
+    <h2 class="section-heading">Our Recent Edited Videos</h2>
     <div class="client-logos">
-      <div class="logo-item"><img src="ourislanbasiclogo.jpg" alt="Our Islam Basic Logo"></div>
-      <div class="logo-item"><img src="adbanceourislam.jpg" alt="Advance Our Islam Logo"></div>
-      <div class="logo-item"><img src="501286923_1169487231856298_8884721809578371696_n.jpg" alt="Client Logo 3"></div>
-      <div class="logo-item"><img src="News Logo.png" alt="Client Logo 4"></div>
-      <div class="logo-item"><img src="Modern Letter D Logo.png" alt="Client Logo 5"></div>
-      <div class="logo-item"><img src="my logo.png" alt="Client Logo 6"></div>
+      <div class="logo-item">
+        <iframe src="https://www.youtube.com/embed/szn5NaY4aE0" title="Edited Video 1" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+      <div class="logo-item">
+        <iframe src="https://www.youtube.com/embed/bPv8fnhwy-I" title="Edited Video 2" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
+      <div class="logo-item">
+        <iframe src="https://www.youtube.com/embed/DPT9yt9x43Y" title="Edited Video 3" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+          allowfullscreen></iframe>
+      </div>
     </div>
   </section>
 
@@ -418,4 +426,3 @@
   </script>
 </body>
 </html>
-
